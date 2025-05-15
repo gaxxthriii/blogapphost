@@ -17,7 +17,7 @@ axios.post('/api/user/login',form).then((res)=>{
 // console.log(res)
 alert(res.data.message)
 if(res.data.jtoken){
-  sessionStorage.setItem('logintoken',res.data.jtoken);
+  localStorage.setItem('logintoken',res.data.jtoken);
 
 navigate('/Blog')}
 }).catch ((err)=>{
